@@ -10,11 +10,10 @@ function solve(str,idx){
   var left = 1
   var right =0
   var place = str.charAt(idx);
-  console.log(place);
-      if (place != '(') {
-        return -1;
-      };
-for (i=idx+1; i< str.length; i++){
+    if (place != '(') {
+      return -1;
+    };
+  for (i=idx+1; i< str.length; i++){
     if (str.charAt(i)==='('){
       left++
     }
@@ -24,9 +23,7 @@ for (i=idx+1; i< str.length; i++){
     if (left===right){
       return console.log('index of ' +i);
     }
-}
-
-
+  }
 }
 
 
