@@ -16,14 +16,15 @@ function solve(str,idx){
   for (i=idx+1; i< str.length; i++){
     if (str.charAt(i)==='('){
       left++
-    }
+    };
     if (str.charAt(i)===')'){
       right++
-    }
+    };
     if (left===right){
-      return console.log('index of ' +i);
-    }
-  }
+      console.log('index of ' +i);
+      return i;
+    };
+  };
 }
 
 
